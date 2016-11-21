@@ -1,0 +1,32 @@
+package homework;
+
+public class Human {
+
+    int age;
+    String name;
+    double weight;
+    double height;
+    boolean adultResult;
+    boolean isFatResult;
+
+    public static void yourName(String name) {
+        System.out.println("Your name is - " + name);
+    }
+
+    public static void isAdult(int age) {
+        if (age >= 18) {
+            System.out.println("You are adult, your age is - " + age);
+        } else {
+            System.out.println("You're not adult.");
+        }
+    }
+
+    public static void isFat(double weight, double height) {
+        double fatI = weight / (height * height);
+        if (fatI > 25) {
+            System.out.println("Sorry, but you're have overweight. Your Ketle's Index = " + fatI);
+        } else {
+            System.out.println("Congratulations, you're not fat");
+        }
+    }
+}
